@@ -1,8 +1,10 @@
 package org.formation.coffee.domain.exception;
 
-public abstract class CoffeeNotFoundException extends DomainException {
+import org.formation.coffee.domain.model.CoffeeId;
 
-    public CoffeeNotFoundException(String message) {
-        super(message);
+public class CoffeeNotFoundException extends DomainException {
+
+    public CoffeeNotFoundException(CoffeeId id) {
+        super("Coffee not found: " + id.value());
     }
 }
