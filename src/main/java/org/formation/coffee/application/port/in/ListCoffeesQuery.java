@@ -4,6 +4,6 @@ import org.formation.coffee.domain.model.Coffee;
 
 import java.util.List;
 
-public interface ListCoffeeQuery {
+public interface ListCoffeesQuery {
     List<Coffee> listCoffees();
 }

@@ -1,6 +1,6 @@
 package org.formation.coffee.application.port.in;
 
-import jakarta.annotation.Nullable;
+import org.jspecify.annotations.Nullable;
 import org.formation.coffee.domain.model.CoffeeId;
 import org.formation.coffee.domain.model.Price;
 

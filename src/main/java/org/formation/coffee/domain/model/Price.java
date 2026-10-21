@@ -8,8 +8,7 @@ public record Price(int amount) {
 
     public Price {
         if (amount < MIN || amount > MAX) {
-            throw new DomainValidationException("Price must be between %d and %d, got %d".formatted(MIN, MAX, amount)) {
-            };
+            throw new DomainValidationException("Price must be between %d and %d, got %d".formatted(MIN, MAX, amount));
         }
     }
 }

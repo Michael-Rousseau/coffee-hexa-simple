@@ -5,8 +5,7 @@ import org.formation.coffee.domain.exception.DomainValidationException;
 public record CoffeeId(long value) {
     public CoffeeId {
         if (value <= 0) {
-            throw new DomainValidationException("CoffeeId must be positive, got " + value) {
-            };
+            throw new DomainValidationException("CoffeeId must be positive, got " + value);
         }
     }
 }

@@ -11,7 +11,10 @@ import org.formation.coffee.domain.model.Price;
 
 import java.util.List;
 
-public class CoffeeApplicationService implements ListCoffeeQuery, GetCoffeeQuery, CreateCoffeeUseCase, UpdateCoffeeUseCase {
+/**
+ * Implémente les cas d'usage des cafés. Java pur : câblé par {@code UseCaseConfig}, sans annotation Spring.
+ */
+public class CoffeeApplicationService implements ListCoffeesQuery, GetCoffeeQuery, CreateCoffeeUseCase, UpdateCoffeeUseCase {
     private final LoadCoffeePort loadCoffeePort;
     private final SaveCoffeePort saveCoffeePort;
     private final TransactionRunner transactionRunner;
